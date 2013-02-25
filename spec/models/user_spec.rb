@@ -16,6 +16,16 @@ describe User do
       @user.available.should be true
     end
 
+    it 'has mentorship and knows how to use it' do
+      @user.update_attributes(:can_mentor => true)
+      @user.can_mentor.should be true
+    end
+
+    it 'has wants_mentoring and knows how to use it' do
+      @user.update_attributes(:wants_mentoring => true)
+      @user.wants_mentoring.should be true
+    end
+
   end
 
   context 'tz_order' do
