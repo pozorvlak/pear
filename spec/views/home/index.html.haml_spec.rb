@@ -27,7 +27,7 @@ describe 'home/index.html.haml', :type => "view" do
     end
     it 'has a form for your availability and time zone' do
       assert_select 'form' do
-        assert_select 'input[type=checkbox]'
+        assert_select 'input[type=checkbox]', 3
         assert_select 'select#user_time_zone'
         assert_select 'input[type=submit]'
       end
