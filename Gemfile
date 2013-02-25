@@ -10,6 +10,7 @@ group :development, :test do
   gem 'sqlite3'
   gem "factory_girl_rails", "~> 4.0"
   gem 'multi_json'
+  gem 'webrat'
 end
 
 group :production do

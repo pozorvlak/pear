@@ -4,6 +4,12 @@
 - else
   %h3.boo is not available :-(
 
+-if @user.can_mentor
+  %p Can mentor new users.
+
+-if @user.wants_mentoring
+  %p Would like to be mentored.
+
 %b Time zone: 
 = @user.tz_string
 
