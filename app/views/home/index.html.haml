@@ -38,9 +38,9 @@
         %td
           = link_to u.name, u
         %td
-          = u.can_mentor
+          = u.can_mentor ? "✔" : ""
         %td
-          = u.wants_mentoring
+          = u.wants_mentoring ? "✔" : ""
         %td
           = u.tz_string
         %td
