@@ -29,12 +29,18 @@
   %table.table.table-striped
     %tr
       %td Name
+      %td Can mentor?
+      %td Wants mentoring?
       %td Timezone/approximate location
       %td Offset (DST aware)
     - @available.each do |u|
       %tr
         %td
           = link_to u.name, u
+        %td
+          = u.can_mentor
+        %td
+          = u.wants_mentoring
         %td
           = u.tz_string
         %td
